@@ -4,25 +4,23 @@ import 'bootstrap/dist/css/bootstrap.css';
 class counter extends Component {
     state={
         count:0,
+        tags:['tag1','tag2','tag3']
+    }
+ 
+    render() {
         
-    }
-    formatCount(){
-        const {count} =this.state;
-        return count===0 ? "Zero" :count
-    }
-    styles={
-        fontSize:50,
-        fontWeight:"bold"
-
-    };
-   
-    render() { 
+        
+        let classes="badge m2 badge-";
+        classes+=(this.state.count ===0 ) ? "warning " : "primary"
         return ( 
 
             <div>
                 
-                <span style={this.styles} className="badge badge-primary m-2">{this.formatCount()} </span> 
-                <button style={this.styles}className="btn btn-secondary btn-sm">Increment</button>
+              
+                <ul>
+                     {this.state.tags.map(tag=><li key={tag}>{tag}</li>) }
+                </ul>
+
             </div>
          );
     }
