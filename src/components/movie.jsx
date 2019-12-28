@@ -3,9 +3,24 @@ import React, { Component } from 'react';
 class Movies extends Component {
     state = {  }
     render() { 
-        return (  
-            <div>this is the movie component</div>
-        );
+        return <table className="table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Movie</th>
+                    <th>Genre</th>
+                    <th>Rate</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
     }
 }
  
