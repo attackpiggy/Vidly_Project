@@ -10,16 +10,12 @@ class counter extends Component {
     render() {
         
         
-        let classes="badge m2 badge-";
-        classes+=(this.state.count ===0 ) ? "warning " : "primary"
+
         return ( 
 
             <div>
                 
               
-                <ul>
-                     {this.state.tags.map(tag=><li key={tag}>{tag}</li>) }
-                </ul>
 
             </div>
          );
