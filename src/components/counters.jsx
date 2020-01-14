@@ -1,10 +1,17 @@
 import React, { Component } from 'react';
+import counter from './Counter'
+
+
 
 class Counters extends Component {
     
     render() { 
-        return ( <h1>This is another statment</h1> );
+        return ( <div>
+            <counter/>
+            <counter/>
+            <counter/>
+            </div> );
     }
 }
  
-export default Counters;
+export default Counters; 
