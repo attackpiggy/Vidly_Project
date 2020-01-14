@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import counter from './Counter'
+import Counter from './counter'
 
 
 
@@ -7,9 +7,9 @@ class Counters extends Component {
     
     render() { 
         return ( <div>
-            <counter/>
-            <counter/>
-            <counter/>
+            <Counter/>
+            <Counter/>
+            <Counter/>
             </div> );
     }
 }
