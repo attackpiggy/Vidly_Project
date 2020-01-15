@@ -7,9 +7,12 @@ class Counter extends Component {
    count:0,
    //tags:['tag1','tag2','tag3']
  }
- handleIncrement=()=>{
+ handleIncrement=(product)=>{
   
    this.setState({count: this.state.count+1 })
+ }
+ doHandleIncrement=()=>{
+   this.handleIncrement({id:1})
  }
 
     render() {
@@ -22,7 +25,7 @@ class Counter extends Component {
           </div> 
           <div className="col">
             <button
-              onClick={() => onIncrement(counter)}
+              onClick={this.doHandleIncrement}
               className="btn btn-secondary btn-sm"
             >
               +
