@@ -7,41 +7,28 @@ class Counter extends Component {
    count:0,
    //tags:['tag1','tag2','tag3']
  }
- handleIncrement=(product)=>{
+ handleIncrement=product=>{
   
    this.setState({count: this.state.count+1 })
  }
 
     render() {
-      console.log("props", this.props);
-      const { counter, onIncrement, onDecrement, onDelete } = this.props;
+      
+      
       return (
-        <div className="row">
-          <div className="col-1">
+        
+          <div >
             <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
-          </div> 
-          <div className="col">
+         
             <button
               onClick={()=>this.handleIncrement(product)}
               className="btn btn-secondary btn-sm"
-            >
-              +
+              >
+              Increment
+              
             </button>
-            <button
-              onClick={() => onDecrement(counter)}
-              className="btn btn-secondary btn-sm m-2"
-              disabled={counter.value === 0 ? "disabled" : ""}
-            >
-              -
-            </button>
-            <button
-              onClick={() => onDelete(counter.id)}
-              className="bnt btn-danger btn-sm"
-            >
-              Delete
-            </button>
-          </div>
-        </div>
+
+              </div> 
       );
     }
    
