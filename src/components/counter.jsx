@@ -9,12 +9,6 @@ class Counter extends Component {
  }
 
 
- // constructor(){
-//   super();
-//   this.handleIncrement.bind(this)
-
-
-// }
 
 
 handleIncrement=()=>
