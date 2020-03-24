@@ -16,6 +16,10 @@ class Counters extends Component {
 
 
 
+   handleIncrement=counter=>{
+     console.log(counter, "plumbing check ")
+   }
+
    handleDelete= counterId =>{
     //console.log("Testing Event handler", counterId)
 
@@ -45,6 +49,7 @@ handleReset=()=>{
           { this.state.counters.map(counter=> (<Counter 
           key={counter.id} 
           onDelete={this.handleDelete}
+          onIncrement={this.handleIncrement}
           counter={counter}
           //value={counter.value} 
           //id={counter.id}
