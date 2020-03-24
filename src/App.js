@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{Component} from 'react';
 import NavBar from './components/navbar'
 import './App.css';
 import Counter from "./components/counter"
