@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import NavBar from './components/navbar'
 import './App.css';
-import Counter from "./components/counter"
+import Counters from "./components/counters"
 
 //import Movies from "./components/movies"
 
@@ -15,7 +15,7 @@ import Counter from "./components/counter"
 // }
 
 // export default App;
-
+//<main className="container"> <Counter/> </main>
 
 
 class App extends Component {
@@ -24,8 +24,8 @@ class App extends Component {
     return ( 
       <React.Fragment>
       <NavBar/>
-      <main className="container"> <Counter/> </main>
      
+      <main className="container"> <Counters/> </main>
      
      </React.Fragment>
      
