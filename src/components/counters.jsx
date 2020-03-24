@@ -13,9 +13,22 @@ class Counters extends Component {
         {id:4, value:0}
        ]
    } 
+
+
+
+   handleDelete=()=>{
+     console.log("Testing Event handler")
+   }
+
+
+
+
+
+
+
     render() { 
         return ( <div>
-          { this.state.counters.map(counter=><Counter key={counter.id} value={counter.value} />)}
+          { this.state.counters.map(counter=><Counter key={counter.id} onDelete={this.handleDelete}value={counter.value} />)}
             </div> );
     }
 }
