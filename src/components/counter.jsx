@@ -14,12 +14,13 @@ handleIncrement=()=>
 
     render() {
       let classes ="badge m-2 badge-"
-      classes+=(this.state.value ===0) ? "warning" : "primary"
+      //classes+=(this.state.value ===0) ? "warning" : "primary"
      
       
       return (
         
           <div >
+           
             
             <span className={classes}>{this.formatCount()}</span>
             <button
@@ -29,6 +30,7 @@ handleIncrement=()=>
               Increment
               
             </button>
+            <button className="btn btn-danger btn-sm m-2">Delete </button>
 
 
               </div> 
