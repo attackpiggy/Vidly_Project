@@ -18,6 +18,9 @@ class Counters extends Component {
 
    handleIncrement=counter=>{
      console.log(counter, "plumbing check ")
+     const counters=[...this.state.counters]
+     counters[0].value++
+     console.log(this.state.counters[0])
    }
 
    handleDelete= counterId =>{
