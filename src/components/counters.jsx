@@ -15,7 +15,7 @@ class Counters extends Component {
    } 
 
 
-
+// need to work on this part a bit more, plumbing apparently working not sure why though.!!
    handleIncrement=counter=>{
      console.log(counter, "plumbing check ")
      const counters=[...this.state.counters]
