@@ -67,7 +67,8 @@ this.setState({counters})
       <React.Fragment>
       <NavBar/>
      
-      <main className="container"> <Counters/> </main>
+      <main className="container"> 
+      <Counters onReset={this.handleReset}/> </main>
      
      </React.Fragment>
      
