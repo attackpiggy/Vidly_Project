@@ -70,7 +70,7 @@ this.setState({counters})
       <main className="container"> 
       <Counters 
       counters={this.state.counters}
-      onReset={this.handleReset} onIncrement={this.handleIncrement} onhandleDelete={this.handleDelete}/> </main>
+      onReset={this.handleReset} onIncrement={this.handleIncrement} onDelete={this.handleDelete}/> </main>
      
      </React.Fragment>
      
