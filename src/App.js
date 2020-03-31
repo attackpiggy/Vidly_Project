@@ -65,7 +65,7 @@ this.setState({counters})
   render() { 
     return ( 
       <React.Fragment>state.counters
-      <NavBar totalCounters={this.state.counters.length}/>
+      <NavBar totalCounters={this.state.counters.filter(c=>c.value>0).length}/>
      
       <main className="container"> 
       <Counters 
