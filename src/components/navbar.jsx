@@ -2,14 +2,14 @@ import React, { Component } from 'react'
 
 //functional component
 
-const NavBar=()=>{
+const NavBar=( props)=>{
 
     return ( 
         <nav className="navbar navbar-light bg-light">
             <a className="navbar-brand" href="#">
     Navbar{" "} 
     
-    <span className="badge badge-pill badge-scondary">{this.props.totalCounters}</span>
+    <span className="badge badge-pill badge-scondary">{props.totalCounters}</span>
         </a>
         </nav>
     
@@ -21,12 +21,5 @@ const NavBar=()=>{
 
 
 
-
-
-class NavBar extends Component {
-    
-    render() { 
-}
-}
  
 export default NavBar;
