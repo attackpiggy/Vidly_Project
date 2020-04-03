@@ -36,8 +36,14 @@ constructor(){
   super()
 
   console.log("App-Constructor")
+  
 }
 
+componentDidMount(){
+  //make ajax call here
+  console.log("App-Mounted")
+
+}
 
 
 // need to work on this part a bit more, plumbing apparently working not sure why though.!!
