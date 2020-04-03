@@ -32,6 +32,14 @@ class App extends Component {
 } 
 
 
+constructor(){
+  super()
+
+  console.log("App-Constructor")
+}
+
+
+
 // need to work on this part a bit more, plumbing apparently working not sure why though.!!
 handleIncrement=counter=>{
   console.log(counter, "plumbing check ")
