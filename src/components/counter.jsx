@@ -3,7 +3,11 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 class Counter extends Component {
 
+componentDidUpdate(prevProps,prevState){
+  console.log("prevProps",prevProps)
+  console.log("prevState",prevState)
 
+}
 
     render() {
       let classes ="badge m-2 badge-"
