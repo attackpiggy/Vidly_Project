@@ -10,6 +10,8 @@ class Counters extends Component {
 
     render() { 
 
+      console.log("Counters-rednered")
+
       const {onReset,counters,onDelete,onIncrement}=this.props
 
         return ( <div>
