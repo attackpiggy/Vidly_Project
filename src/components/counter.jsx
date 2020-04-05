@@ -4,15 +4,11 @@ import 'bootstrap/dist/css/bootstrap.css';
 class Counter extends Component {
 
 
-// handleIncrement=()=>
-// {
-//   this.setState({value:this.state.value+1})
-// }
 
     render() {
       let classes ="badge m-2 badge-"
       //classes+=(this.state.value ===0) ? "warning" : "primary"
-     
+      console.log("Counters-rednered")
       
       return (
         
