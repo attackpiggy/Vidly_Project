@@ -1,23 +1,30 @@
 import React, { Component } from 'react'
 
 
-class Pagination extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {  }
-    }
-    render() { 
-        return (  <div>
 
-                    <nav aria-label="Page navigation example">
-                    <ul className="pagination">
-                        <li className="page-item"><a className="page-link" href="#">Previous</a></li>
-                        <li className="page-item"><a className="page-link" href="#">1</a></li>
-                        <li className="page-item"><a className="page-link" href="#">2</a></li>
-                        <li className="page-item"><a className="page-link" href="#">3</a></li>
-                        <li className="page-item"><a className="page-link" href="#">Next</a></li>
-                    </ul>
-                    </nav>
+
+const Pagination=(props)=>{
+    return null;
+}
+// class Pagination extends Component {
+//     constructor(props) {
+ 
+//     }
+
+
+
+//     render() { 
+//         return (  <div>
+
+//                     <nav aria-label="Page navigation example">
+//                     <ul className="pagination">
+//                         <li className="page-item"><a className="page-link" href="#">Previous</a></li>
+//                         <li className="page-item"><a className="page-link" href="#">1</a></li>
+//                         <li className="page-item"><a className="page-link" href="#">2</a></li>
+//                         <li className="page-item"><a className="page-link" href="#">3</a></li>
+//                         <li className="page-item"><a className="page-link" href="#">Next</a></li>
+//                     </ul>
+//                     </nav>
 
             
 
@@ -25,8 +32,8 @@ class Pagination extends Component {
 
 
 
-        </div>);
-    }
-}
+//         </div>);
+//     }
+// }
  
 export default Pagination;
