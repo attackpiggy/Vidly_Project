@@ -3,6 +3,8 @@ import NavBar from './components/navbar'
 import './App.css';
 import Counters from "./components/counters"
 
+import Pagination from "./components/pagination"
+
 //import Movies from "./components/movies"
 
 // function App() {
@@ -86,7 +88,7 @@ this.setState({counters})
       <Counters 
       counters={this.state.counters}
       onReset={this.handleReset} onIncrement={this.handleIncrement} onDelete={this.handleDelete}/> </main>
-     
+      <Pagination/>
      </React.Fragment>
      
      );
