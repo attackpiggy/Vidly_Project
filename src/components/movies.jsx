@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import {getMovies} from "../services/fakeMovieService"
+import Pagination from "./common/Pagination"
 
 class Movies extends Component {
     state = {  
-        movies:getMovies()
+        movies:getMovies(),
+        pageSize: 4
     }
     handleDelete=movie=>{
        const movies=this.state.movies.filter(m => m._id !==movie._id)
@@ -39,6 +41,7 @@ class Movies extends Component {
                ) )}
             </tbody>
         </table>
+        <Pagination itemsCoun={count} pageSize={this.state.pageSize}/>
         </React.Fragment>
         )        
     }
