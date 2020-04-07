@@ -4,6 +4,8 @@ import React, { Component } from 'react'
 
 
 const Pagination=props=>{
+    const {itemsCount,pageSize}=props
+
     return <nav>
         <ul className="pagination">
             <li className="page-item">
