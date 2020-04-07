@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {getMovies} from "../services/fakeMovieService"
-import Pagination from "./components/pagination"
-
+import Pagination from "../components/pagination"
+ 
 class Movies extends Component {
     state = {  
         movies:getMovies(),

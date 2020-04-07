@@ -4,6 +4,7 @@ import './App.css';
 import Counters from "./components/counters"
 
 import Pagination from "./components/pagination"
+import Movies from './components/movies';
 
 //import Movies from "./components/movies"
 
@@ -82,13 +83,14 @@ this.setState({counters})
     console.log("App-Rendered")
     return ( 
       <React.Fragment>
-      <NavBar totalCounters={this.state.counters.filter(c=>c.value>0).length}/>
+        <Movies/>
+      {/* <NavBar totalCounters={this.state.counters.filter(c=>c.value>0).length}/>
      
       <main className="container"> 
       <Counters 
       counters={this.state.counters}
-      onReset={this.handleReset} onIncrement={this.handleIncrement} onDelete={this.handleDelete}/> </main>
-      <Pagination/>
+      onReset={this.handleReset} onIncrement={this.handleIncrement} onDelete={this.handleDelete}/> </main> */}
+      
      </React.Fragment>
      
      );
