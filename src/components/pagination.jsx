@@ -11,8 +11,9 @@ const Pagination=props=>{
 
     return <nav>
         <ul className="pagination">
-            {pages.map(page=> <li className="page-item">
-                <a  className="page-link">1</a>
+            {pages.map(page=>
+             <li key={page} className="page-item">
+                <a  className="page-link">{page}</a>
             </li>
             )}
            
