@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 
 
 
-const Pagination=(props)=>{
+const Pagination=props=>{
     return <nav>
         <ul className="pagination">
             <li className="page-item">
