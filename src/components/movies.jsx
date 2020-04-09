@@ -21,11 +21,11 @@ class Movies extends Component {
     }
     render() { 
         const {length:count}= this.state.movies
-         const {pageSize,currentPage,movies}=this.state
+         const {pageSize,currentPage,movies:allMovies}=this.state
         if(count ===0)
             
             return <p>There are no movies currently in the database</p>
-            const movies = paginate (movies,currentPage,pageSize) 
+            const movies = paginate (allMovies,currentPage,pageSize) 
         return (
          <React.Fragment>   
         <p>Showing {count} movies from the database. </p>
