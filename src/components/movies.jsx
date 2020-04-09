@@ -5,7 +5,7 @@ import Pagination from "../components/pagination"
 class Movies extends Component {
     state = {  
         movies:getMovies(),
-        pageSize: 10 
+        pageSize: 10
     }
     handleDelete=movie=>{
        const movies=this.state.movies.filter(m => m._id !==movie._id)
