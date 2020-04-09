@@ -18,7 +18,7 @@ componentWillUnmount(){
 
     render() {
       let classes ="badge m-2 badge-"
-      //classes+=(this.state.value ===0) ? "warning" : "primary"
+     
       console.log("Counters-rednered")
       
       return (

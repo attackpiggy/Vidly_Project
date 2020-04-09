@@ -6,19 +6,6 @@ import Counters from "./components/counters"
 import Pagination from "./components/pagination"
 import Movies from './components/movies';
 
-//import Movies from "./components/movies"
-
-// function App() {
-//   return (
-  
-//     <main className="container">
-//       <Movies/>
-//     </main>
-//   );
-// }
-
-// export default App;
-//<main className="container"> <Counter/> </main>
 
 
 class App extends Component {
