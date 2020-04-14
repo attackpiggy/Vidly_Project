@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 
 
-class ListGroup extends Component {
-    state = {  }
-    render() { 
-        return null ;
+const ListGroup=(props)=> {
+    const {items}=props
+
+    return <ul className="list-group">
+        {items.map(item=><li key={item._id}className="list-group-item"></li>)}
+        
+    </ul>
+
     }
-}
+
  
-export default ListGroupnull 
+export default ListGroup
