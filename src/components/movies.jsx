@@ -3,10 +3,12 @@ import {getMovies} from "../services/fakeMovieService"
 import Pagination from "../components/pagination"
 import { paginate } from "../components/paginate"
 import ListGroup from '../components/listGroup'
+import {getGenres} from '../services/fakeGenreService'
  
 class Movies extends Component {
     state = {  
-        movies:getMovies(),
+        movies:[],
+        genres:[],
         pageSize: 4,
         currentPage: 1
     }
@@ -20,20 +22,30 @@ class Movies extends Component {
         this.setState({currentPage:page})
 
     }
+
+    componentDidMount(){
+        this.setState({movies: getMovies(),genres:getGenres()})
+
+    }
+
+
+
     render() { 
         const {length:count}= this.state.movies
-         const {pageSize,currentPage,movies:allMovies}=this.state
+        const {pageSize,currentPage,movies:allMovies}=this.state
         if(count ===0)
             
             return <p>There are no movies currently in the database</p>
             const movies = paginate (allMovies,currentPage,pageSize) 
         return (
          <div className="row">
-             <div className="col-2"></div>
+             <div className="col-2">
+                 <ListGroup items={this.state.genres} onItemSelect={this.handleGenreSelect}/>
+             </div>
              
              
              <div className="col">
-                 
+
         <p>Showing {count} movies from the database. </p>
         <table className="table">
             <thead>
