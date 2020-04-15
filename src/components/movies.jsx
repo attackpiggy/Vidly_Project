@@ -35,10 +35,10 @@ class Movies extends Component {
 
     render() { 
         const {length:count}= this.state.movies
-        const {pageSize,currentPage,movies:allMovies}=this.state
+        const {pageSize,currentPage,movies:allMovies,selectedGenre}=this.state
         if(count ===0)
-            
-            return <p>There are no movies currently in the database</p>
+        return <p>There are no movies currently in the database</p>
+            const filtered=selectedGenre ? allMovies.filter(m=>m.genre._id == selectedGenre._id) :allMovies
             const movies = paginate (allMovies,currentPage,pageSize) 
         return (
          <div className="row">
