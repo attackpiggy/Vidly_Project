@@ -30,7 +30,7 @@ class Movies extends Component {
     }
 
     handleGenreSelect=genre=>{
-       this.setState({selectedGenre:genre})
+       this.setState({selectedGenre:genre,currentPage:1})
     }
 
 
@@ -39,7 +39,7 @@ class Movies extends Component {
         const {pageSize,currentPage,movies:allMovies,selectedGenre}=this.state
         if(count ===0)
         return <p>There are no movies currently in the database</p>
-            const filtered=selectedGenre ? allMovies.filter(m=>m.genre._id == selectedGenre._id) :allMovies
+            const filtered=selectedGenre && selectedGenre._id ? allMovies.filter(m=>m.genre._id == selectedGenre._id) :allMovies
             const movies = paginate (filtered,currentPage,pageSize) 
         return (
          <div className="row">
