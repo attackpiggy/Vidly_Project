@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-//functional component
+
 
 const NavBar=props=>{
     console.log("NavBar-Rendered")
